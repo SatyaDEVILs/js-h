@@ -35,3 +35,33 @@ console.log(typeof outsideTemp );
 console.log(typeof myFunction);
 console.log(typeof id);
 console.log(typeof bigNumber);
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++
+//Stack Memory and Heap Memory 
+//Primitive Datatypes use Stack Memory
+//Non Primitive Data types use Heap Memory
+
+let myYoutubename="Chingur"
+
+let anothername =myYoutubename
+anothername="ITER"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne={
+    email:"Changu@gmail.com",
+    upi:"User@ybl"
+}
+
+let userTwo=userOne
+userTwo.email="monkey@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+// In stack we get a copy but in case of heap we get a reference that means if user2 make some chnages then it wil reflected for user1 in case of heap memory but in case of stack it is not the case
+ 
